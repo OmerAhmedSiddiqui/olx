@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- FontAwsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <div class="contsiner-fluid " id="header">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-1 mt-2">
+                    <img src="images/olxBlueLogo.png" alt="olxlogo" id="olxBlueLogo">
+                </div>
+                <div class="col-1 ">
+                    <a href="" class=" d-flex">
+                        <i class="fa fa-car mt-2 firstLineIcon" aria-hidden="true"></i>
+                        <p class="mt-3">MOTORS</p>
+                    </a>
+                </div>
+
+                <div class="col-1  ml-5 ">
+                    <a href="" class=" d-flex">
+                        <i class="fa fa-building-o  mt-2 firstLineIcon" aria-hidden="true"></i>
+                        <p class="mt-3">PROPERTY</p>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/OLXBlackLogo.png" alt="OLXBlackLogo" id="OLXBlackLogo">
+
+                </div>
+
+                <div class="col-3 ">
+
+                    <div class="input-group mt-3 ml-5 loactionBox rounded">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3"><i class="fa fa-search"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                            placeholder="Pakistan">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="input-group mt-3 ml-5 loactionBox rounded">
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                            placeholder="Find Cars, Mobile Phones and more...">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="searchIcon"><i class="fa fa-search"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 m-4 ml-5">
+                    <a href="#" class="font-weight-bolder" id="login">LOGIN</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" id="SELL">+ SELL</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid shadow">
+        <div class="container">
+            <div class="row ">
+                <div class="col justify-content-between ">
+                    <div id="navbar" class="navbar navbar-light  navbar-expand-md  ">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#popUp">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse  " id="popUp">
+                            <ul class="navbar-nav " id="ul1">
+                                <li class="nav-item dropdown"><a href=""
+                                        class="nav-link dropdown-toggle font-weight-bolder" data-toggle="dropdown">ALL
+                                        CATEGORIES </a>
+                                    <div class="dropdown-menu">
+                                        <label for="mobilePhones" class="dropdown-item"><input type="radio"
+                                                name="categories" onclick="handleClick(this)" value="mobilePhones"
+                                                id="mobilePhonesRadio">
+                                            Mobile Phones</label>
+                                        <label for="Cars" class="dropdown-item"><input type="radio" name="categories"
+                                                onclick="handleClick(this)" value="Cars" id="Cars">
+                                            Cars</label>
+                                        <label for="Motorcycles" class="dropdown-item"><input type="radio"
+                                                name="categories" onclick="handleClick(this)" value="Motorcycles"
+                                                id="Motorcycles">
+                                            Motorcycles</label>
+                                        <label for="Houses" class="dropdown-item"><input type="radio" name="categories"
+                                                onclick="handleClick(this)" value="Houses" id="Houses">
+                                            Houses</label>
+                                        <label for="TvVideoAudio" class="dropdown-item"><input type="radio"
+                                                name="categories" onclick="handleClick(this)" value="TvVideoAudio"
+                                                id="TvVideoAudio">
+                                            TV - Video - Audio </label>
+                                        <label for="Tablets" class="dropdown-item"><input type="radio" name="categories"
+                                                onclick="handleClick(this)" value="Tablets" id="Tablets">
+                                            Tablets</label>
+                                        <label for="LandPlots" class="dropdown-item"><input type="radio"
+                                                name="categories" onclick="handleClick(this)" value="LandPlots"
+                                                id="LandPlots">
+                                            Land & Plots</label>
+                                    </div>
+                                </li>
+                                <li class="nav-item  "><a href="index.html" class="nav-link "> Mobile Phones </a></li>
+                                <li class="nav-item  "><a href="index.html" class="nav-link ">Cars </a></li>
+                                <li class="nav-item  "><a href="index.html" class="nav-link ">Motorcycles </a></li>
+                                <li class="nav-item  "><a href="index.html" class="nav-link ">Houses </a></li>
+                                <li class="nav-item  "><a href="index.html" class="nav-link ">TV - Video - Audio </a>
+                                </li>
+                                <li class="nav-item  "><a href="index.html" class="nav-link ">Tablets </a></li>
+                                <li class="nav-item  "><a href="index.html" class="nav-link ">Land & Plots </a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="col-4 m-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    <div class="container-fluid postion-fixed mt-auto" id="footer">
+        <div class="container ">
+            <div class="row">
+                <div class=" col-6 col-md-2 my-2">
+                    <h6>POPULAR CATEGORIES</h6>
+                    <ul>
+                        <li class="footerLi">Cars</li>
+                        <li class="footerLi">Flats for rent</li>
+                        <li class="footerLi">Mobile Phones</li>
+                        <li class="footerLi">Jobs</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 my-2">
+                    <h6>TRENDING SEARCHES</h6>
+                    <ul>
+                        <li class="footerLi">Bikes</li>
+                        <li class="footerLi">Watches
+                        </li>
+                        <li>Books</li>
+                        <li>Dogs</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 my-2">
+                    <h6>ABOUT US</h6>
+                    <ul>
+                        <li>About EMPG</li>
+                        <li>OLX Blog</li>
+                        <li>Contact Us</li>
+                        <li>OLX for Businesses</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 my-2">
+                    <h6>OLX</h6>
+                    <ul>
+                        <li>Help</li>
+                        <li>Sitemap</li>
+                        <li>Terms of use</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6> FOLLOW US</h6>
+                    <i class="fa fa-facebook footerIcon" aria-hidden="true"></i>
+                    <i class="fa fa-twitter footerIcon" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play footerIcon" aria-hidden="true"></i>
+                    <i class="fa fa-instagram footerIcon" aria-hidden="true"></i>
+                    <!-- <div class="m-3" id="stores"> -->
+                    <br>
+                    <img src="images/appStore.svg" class="stores" alt="appStore">
+                    <img src="images/googlePlay.svg" class="stores" alt="googlePlay">
+                    <img src="images/AppGallery.svg" alt="appGallery" class="stores">
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

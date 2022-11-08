@@ -1,0 +1,65 @@
+#olxBlueLogo {
+    width: 80%;
+}
+
+.firstLineIcon {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(230, 230, 230) 50%, rgb(242, 242, 242) 50%);
+}
+
+
+#OLXBlackLogo {
+    width: 180%;
+}
+
+
+/* #SELL {
+    background: 10px solid transparent;
+    background-image: url("images/sellImage.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 10px;
+    margin-left: -20px;
+} */
+a{
+    color:black;
+}
+
+#login{
+    text-decoration: underline;
+
+}
+
+
+.loactionBox{
+    border: 2px solid black;
+
+}
+
+#header{
+    background-color: #f7f8f8;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+.footerIcon{
+    color:#557477 ;
+    padding: 10px;
+    border: 2px solid #557477;
+    border-radius: 20px;
+}
+.stores{
+    width: 100px;
+margin-top: 10px;
+}
+/* #header{
+    position: fixed;
+} */
+#footer{
+    background-color: #ebeeef;
+/* margin-top: 1000px; */
+}
+
